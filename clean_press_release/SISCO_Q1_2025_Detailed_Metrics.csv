@@ -1,0 +1,75 @@
+Metric_Type,Segment,Sub_Metric,Q1_2024,Q4_2024,Q1_2025,Q1_24_to_Q1_25_Change,Q4_24_to_Q1_25_Change,Unit,Description
+Revenue,Group,Total Revenue,257.6,352.6,328.8,27.6%,-6.7%,SAR millions,Excluding accounting construction revenue
+Revenue,Ports,Gateway,109.2,149.5,155.3,42.2%,4.0%,SAR millions,Gateway revenue
+Revenue,Ports,Transhipment,99.2,147.0,116.0,17.0%,-21.1%,SAR millions,Transhipment revenue
+Revenue,Ports,Total,208.4,296.5,271.3,30.2%,-8.5%,SAR millions,Total ports revenue
+Revenue,Logistics,Land,9.6,12.9,13.4,39.6%,3.9%,SAR millions,Land revenue
+Revenue,Logistics,Warehouse,10.5,11.3,13.4,27.6%,18.6%,SAR millions,Warehouse revenue
+Revenue,Logistics,Service,6.1,5.4,5.4,-11.5%,0.0%,SAR millions,Service revenue
+Revenue,Logistics,Total,26.2,29.5,32.2,22.9%,9.2%,SAR millions,Total logistics revenue
+Revenue,Water,Tawzea,23.1,23.5,22.9,-0.8%,-2.6%,SAR millions,Tawzea revenue
+Revenue,Water,Others,0.0,0.0,0.0,0.0%,0.0%,SAR millions,Other water revenue
+Revenue,Water,Total,23.1,23.5,22.9,-0.8%,-2.6%,SAR millions,Total water revenue
+Revenue,Tawzea,Total,127.2,149.3,132.1,3.8%,-11.5%,SAR millions,Tawzea total revenue
+Revenue,SA Talke,Total,74.4,93.8,93.6,25.9%,-0.2%,SAR millions,SA Talke total revenue
+Gross_Profit,Group,Total Gross Profit,132.9,171.8,182.1,37.1%,6.0%,SAR millions,Adjusted gross profit
+Gross_Profit,Ports,Total,109.2,138.1,157.3,44.0%,13.9%,SAR millions,Ports gross profit
+Gross_Profit,Logistics,Total,12.5,9.8,15.1,20.8%,54.1%,SAR millions,Logistics gross profit
+Gross_Profit,Water,Total,11.2,12.5,11.8,5.4%,-5.6%,SAR millions,Water gross profit
+Gross_Profit,Tawzea,Total,13.8,31.9,17.7,28.3%,-44.5%,SAR millions,Tawzea gross profit
+Gross_Profit,SA Talke,Total,19.7,25.1,26.5,34.5%,5.6%,SAR millions,SA Talke gross profit
+Gross_Margin,Group,Total Margin,51.6%,48.7%,55.4%,3.8%,6.7%,Percentage,Group gross margin
+Gross_Margin,Ports,Total Margin,52.4%,46.6%,58.0%,5.6%,11.4%,Percentage,Ports gross margin
+Gross_Margin,Logistics,Total Margin,47.7%,33.2%,46.8%,-0.9%,13.6%,Percentage,Logistics gross margin
+Gross_Margin,Water,Total Margin,48.4%,53.3%,52.7%,4.3%,-0.6%,Percentage,Water gross margin
+Gross_Margin,Tawzea,Total Margin,10.8%,21.4%,13.4%,2.6%,-8.0%,Percentage,Tawzea gross margin
+Gross_Margin,SA Talke,Total Margin,26.5%,26.8%,28.3%,1.8%,1.5%,Percentage,SA Talke gross margin
+Net_Income,Group,Reported Net Income,-21.2,19.3,24.7,221.2%,28.0%,SAR millions,Group reported net income
+Net_Income,Group,Adjusted Net Income,12.4,19.3,24.7,100.8%,28.0%,SAR millions,Group adjusted net income
+Net_Income,Ports,Reported Net Income,12.2,41.5,59.2,383.5%,42.7%,SAR millions,Ports reported net income
+Net_Income,Logistics,Reported Net Income,5.0,5.4,8.6,72.5%,59.3%,SAR millions,Logistics reported net income
+Net_Income,Water,Reported Net Income,5.6,7.7,7.1,26.8%,-7.8%,SAR millions,Water reported net income
+Net_Income,Tawzea,Reported Net Income,3.2,6.8,6.8,111.5%,0.0%,SAR millions,Tawzea reported net income
+Net_Income,SA Talke,Reported Net Income,14.5,18.9,18.9,30.1%,0.0%,SAR millions,SA Talke reported net income
+Net_Income_Margin,Group,Reported Margin,-8.2%,5.5%,7.5%,15.7%,2.0%,Percentage,Group reported net income margin
+Net_Income_Margin,Group,Adjusted Margin,4.8%,5.5%,7.5%,2.7%,2.0%,Percentage,Group adjusted net income margin
+Net_Income_Margin,Ports,Reported Margin,5.9%,14.0%,21.8%,15.9%,7.8%,Percentage,Ports reported net income margin
+Net_Income_Margin,Logistics,Reported Margin,19.1%,18.3%,26.6%,7.5%,8.3%,Percentage,Logistics reported net income margin
+Net_Income_Margin,Water,Reported Margin,24.2%,32.8%,31.1%,6.9%,-1.7%,Percentage,Water reported net income margin
+Net_Income_Margin,Tawzea,Reported Margin,2.5%,4.6%,5.1%,2.6%,0.5%,Percentage,Tawzea reported net income margin
+Net_Income_Margin,SA Talke,Reported Margin,19.5%,20.2%,20.2%,0.7%,0.0%,Percentage,SA Talke reported net income margin
+Volume,Ports,Gateway TEUs,327,476,417,27.5%,-12.4%,Thousands,Gateway container volume
+Volume,Ports,Transhipment TEUs,348,392,347,-0.3%,-11.5%,Thousands,Transhipment container volume
+Volume,Ports,Total TEUs,675,868,764,13.2%,-12.0%,Thousands,Total container volume
+Volume,Water,Tawzea Volume,2.7,2.8,2.7,0.0%,-3.6%,MN M3,Tawzea water volume
+Volume,Water,Others Volume,1.1,1.3,1.4,27.3%,7.7%,MN M3,Other water volume
+Volume,Water,Total Volume,3.8,4.1,4.1,7.9%,0.0%,MN M3,Total water volume
+Occupancy,Logistics,Land Occupancy,68%,56%,80%,12%,24%,Percentage,Land occupancy rate
+Occupancy,Logistics,Warehouse Occupancy,68%,56%,90%,22%,34%,Percentage,Warehouse occupancy rate
+Operating_Expenses,Group,Total OPEX,53.3,86.9,52.3,-1.9%,-39.8%,SAR millions,Total operating expenses
+Operating_Expenses,Group,Finance Charges,72.1,73.8,72.8,1.0%,-1.4%,SAR millions,Finance charges
+Operating_Expenses,Group,Finance Income,4.5,9.4,2.9,-35.6%,-69.1%,SAR millions,Finance income
+Operating_Expenses,Group,Other Income,6.1,-7.8,4.5,-26.2%,157.7%,SAR millions,Other income/expense
+Operating_Expenses,Group,Zakat,6.6,3.6,11.3,71.2%,213.9%,SAR millions,Zakat expense
+Cash_Flow,Group,Operating Cash Flow Before WC,681.1,681.1,201.9,-70.4%,-70.4%,SAR millions,Operating cash flow before working capital
+Cash_Flow,Group,Net Working Capital Movement,-334.9,-334.9,-96.8,71.1%,71.1%,SAR millions,Net working capital movement
+Cash_Flow,Group,Cash from Operating Activities,346.2,346.2,105.1,-69.6%,-69.6%,SAR millions,Cash generated from operating activities
+Cash_Flow,Group,Finance Charges Zakat Tax,-160.5,-160.5,-40.9,74.5%,74.5%,SAR millions,Finance charges zakat and tax
+Cash_Flow,Group,Net Operating Cash Flow,185.7,185.7,64.2,-65.4%,-65.4%,SAR millions,Net cash flow from operating activities
+Cash_Flow,Group,Short Term Murabaha,-118.6,-118.6,2.0,101.7%,101.7%,SAR millions,Short term murabaha
+Cash_Flow,Group,Other Investing Activities,-99.7,-99.7,-44.7,55.2%,55.2%,SAR millions,Other investing activities
+Cash_Flow,Group,Net Financing Activities,-240.7,-240.7,-52.9,78.0%,78.0%,SAR millions,Net cash used in financing activities
+Cash_Flow,Group,Cash at Beginning,1166.4,1166.4,885.0,-24.1%,-24.1%,SAR millions,Cash at beginning of period
+Cash_Flow,Group,Cash at End,885.0,885.0,853.6,-3.5%,-3.5%,SAR millions,Cash at end of period
+Balance_Sheet,Group,Fixed Assets,4382.8,4382.8,4381.2,-0.04%,-0.04%,SAR millions,Fixed assets
+Balance_Sheet,Group,Investments,262.4,262.4,253.5,-3.4%,-3.4%,SAR millions,Investments
+Balance_Sheet,Group,Other Long Term Assets,5.7,5.7,5.7,0.0%,0.0%,SAR millions,Other long term assets
+Balance_Sheet,Group,Current Assets,1372.7,1372.7,1406.8,2.5%,2.5%,SAR millions,Current assets
+Balance_Sheet,Group,Total Assets,6030.6,6030.6,6047.2,0.3%,0.3%,SAR millions,Total assets
+Balance_Sheet,Group,Borrowings,1255.8,1255.8,1193.5,-5.0%,-5.0%,SAR millions,Borrowings
+Balance_Sheet,Group,Long Term Liabilities,1711.7,1711.7,2748.3,60.5%,60.5%,SAR millions,Long term liabilities
+Balance_Sheet,Group,Current Liabilities,655.3,655.3,673.1,2.7%,2.7%,SAR millions,Current liabilities
+Balance_Sheet,Group,Total Liabilities,3623.1,3623.1,3586.8,-1.0%,-1.0%,SAR millions,Total liabilities
+Balance_Sheet,Group,Equity,2407.5,2407.5,2460.4,2.2%,2.2%,SAR millions,Equity
+
+

@@ -1,0 +1,46 @@
+# Multi-Mode Document Generation System Configuration
+# This file contains configurations for different document types
+
+# Document Mode Definitions
+document_modes:
+  press_release:
+    name: "Press Release"
+    description: "Generate professional press releases"
+    icon: "📰"
+    config_file: "prompts_config.yaml"
+    
+  rfp:
+    name: "Request for Proposal (RFP)"
+    description: "Generate comprehensive RFPs and proposals"
+    icon: "📋"
+    config_file: "rfp_config.yaml"
+    
+  technical_doc:
+    name: "Technical Documentation"
+    description: "Generate technical documentation and guides"
+    icon: "📚"
+    config_file: "technical_doc_config.yaml"
+    
+  business_plan:
+    name: "Business Plan"
+    description: "Generate business plans and strategic documents"
+    icon: "💼"
+    config_file: "business_plan_config.yaml"
+    
+  marketing_content:
+    name: "Marketing Content"
+    description: "Generate marketing materials and content"
+    icon: "📢"
+    config_file: "marketing_config.yaml"
+
+# Default mode
+default_mode: "press_release"
+
+# UI Configuration
+ui_config:
+  show_mode_selector: true
+  allow_custom_modes: true
+  config_editor_enabled: true
+  auto_save_config: true
+
+

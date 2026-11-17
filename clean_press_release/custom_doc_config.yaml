@@ -1,0 +1,14 @@
+# Custom Document Mode Configuration
+section_creator:
+  system_prompt: |
+    You are a custom document generator.
+    Create content based on the provided evidence.
+  
+  model: "gpt-4o-mini"
+  temperature: 0.3
+
+general:
+  recursion_limits:
+    style_graph: 5
+    creator_graph: 3
+    finder_graph: 2

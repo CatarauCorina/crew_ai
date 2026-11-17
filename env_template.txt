@@ -1,0 +1,21 @@
+# Environment Variables Template
+# Copy this file to .env and fill in your actual values
+
+# OpenAI Configuration
+OPENAI_API_KEY=your-openai-api-key-here
+
+# MongoDB Configuration
+MONGO_URI=your-mongodb-connection-string-here
+DB_NAME=SISCO
+
+# Optional: Core42 Configuration (alternative to OpenAI)
+USE_CORE_42_CLIENT=False
+CORE42_KEY=your-core42-key-here
+
+# Optional: Selenium Configuration
+USE_SELENIUM_FALLBACK=1
+
+# Optional: Processing Configuration
+FORCE=0
+PACE_SECONDS=0.2
+

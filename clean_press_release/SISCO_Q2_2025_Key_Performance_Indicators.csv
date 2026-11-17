@@ -1,0 +1,23 @@
+KPI_Category,Metric,Q2_2024,Q1_2025,Q2_2025,H1_2024,H1_2025,Q2_24_to_Q2_25_Change,Q1_25_to_Q2_25_Change,H1_24_to_H1_25_Change,Unit,Status
+Financial_Performance,Revenue,302.4,328.8,307.3,560.1,636.1,1.62%,-6.54%,13.57%,SAR millions,Positive
+Financial_Performance,Gross_Profit,156.8,182.1,160.0,289.7,342.2,2.04%,-12.14%,18.12%,SAR millions,Positive
+Financial_Performance,Operating_Profit,97.3,129.8,102.5,176.9,232.3,5.34%,-21.03%,31.32%,SAR millions,Positive
+Financial_Performance,Net_Profit,10.5,24.7,19.9,-10.6,44.7,89.52%,-19.43%,521.70%,SAR millions,Exceptional
+Financial_Performance,Comprehensive_Income,11.9,16.7,17.8,-1.9,34.5,49.58%,6.59%,1915.79%,SAR millions,Exceptional
+Profitability_Metrics,Gross_Margin,51.8%,55.4%,52.1%,51.7%,53.8%,0.3%,-3.3%,2.1%,Percentage,Stable
+Profitability_Metrics,Operating_Margin,32.2%,39.5%,33.4%,31.6%,36.5%,1.2%,-6.1%,4.9%,Percentage,Improving
+Profitability_Metrics,Net_Margin,3.5%,7.5%,6.5%,-1.9%,7.0%,3.0%,-1.0%,8.9%,Percentage,Strong_Improvement
+Per_Share_Metrics,EPS,-0.13,,0.55,-0.13,0.55,523.08%,,523.08%,SAR per share,Exceptional
+Balance_Sheet,Shareholders_Equity,1474.0,,1447.0,1474.0,1447.0,-1.83%,,-1.83%,SAR millions,Stable
+Segment_Performance,Ports_Growth,Steady,Strong,Mixed,Good,Strong,Positive,Declining,Positive,Qualitative,Strong
+Segment_Performance,Logistics_Growth,Steep_Increase,Good,Strong,Good,Strong,Positive,Improving,Positive,Qualitative,Excellent
+Segment_Performance,Equity_Associates,Good,Strong,Strong,Good,Strong,Positive,Stable,Positive,Qualitative,Strong
+Cost_Management,Operating_Costs,High,Controlled,Controlled,High,Controlled,Improving,Stable,Improving,Qualitative,Improving
+Cost_Management,Finance_Charges,Stable,Stable,Stable,Stable,Stable,Stable,Stable,Stable,Qualitative,Controlled
+Strategic_Progress,BOT_Concessions,0,0,4,0,4,New,New,New,Count,Strategic_Win
+Strategic_Progress,New_Terminals,0,0,4,0,4,New,New,New,Count,Strategic_Win
+Strategic_Progress,Western_Region,0,0,4,0,4,New,New,New,Count,Strategic_Win
+Audit_Quality,Auditor_Opinion,Unmodified,Unmodified,Unmodified,Unmodified,Unmodified,Stable,Stable,Stable,Qualitative,Clean
+Compliance,IFRS_Standards,Compliant,Compliant,Compliant,Compliant,Compliant,Stable,Stable,Stable,Qualitative,Compliant
+
+

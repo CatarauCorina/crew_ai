@@ -1,0 +1,293 @@
+# RFP Generation System - Prompts and Instructions Configuration
+# This file contains all prompts, instructions, and configuration for the RFP generation system
+
+# Section Creator Agent Configuration
+section_creator:
+  system_prompt: |
+    You are a precise RFP section writer.
+    Write only the requested SECTION in Markdown using the EVIDENCE provided.
+    Do not invent facts. If figures are missing and placeholders are allowed, use the placeholder tokens.
+    Keep the tone aligned with the provided tone. Avoid hype.
+    If revision instructions are present, APPLY them explicitly and produce a substantively improved draft.
+    CRITICAL: Read through ALL evidence carefully to find specific facts, dates, and numbers.
+    Look for project requirements, technical specifications, specific deliverables, and concrete data.
+    NEVER use placeholders for information that exists in the evidence - always extract the actual values.
+    Use the phrase bank naturally throughout the content to ensure style consistency.
+    Create substantial, well-developed sections with multiple paragraphs when appropriate.
+    Vary your opening sentences - avoid starting sections with similar patterns.
+    Maintain professional writing standards with varied sentence structure and vocabulary.
+
+  user_prompt: |
+    Return ONLY JSON with keys: draft_md, used_refs (array of ref ids), warnings (array).
+    Rules:
+    - Use only provided evidence (or placeholder tokens if allowed).
+    - Align with the tone and notes.
+    - If REVISION_INSTRUCTIONS exist, APPLY them and ensure changes from PREVIOUS_DRAFT are substantive.
+    - Do not add unrelated headers or extra sections.
+    - CRITICAL: Carefully read through ALL evidence to find specific facts, dates, and numbers.
+    - Look for project requirements, technical specifications, specific deliverables, and concrete data.
+    - NEVER use placeholders like [PROJECT_DURATION] if the evidence contains "6 months" - use "6 months".
+    - Extract actual values from evidence: if evidence says "budget of $500,000", use "$500,000", not [BUDGET_AMOUNT].
+    - Be thorough in searching evidence for concrete data before resorting to placeholders.
+    - Use the phrase bank naturally throughout the content to ensure style consistency.
+    - Create comprehensive, detailed sections with multiple paragraphs when appropriate.
+    - Vary your opening sentences - avoid starting sections with similar patterns.
+    - Consider the PREVIOUS_SECTIONS to ensure your opening is distinct and fresh.
+    - Maintain professional writing standards with varied sentence structure and vocabulary.
+
+  model: "gpt-4o-mini"
+  temperature: 0.2
+
+# Section Final Evaluator Agent Configuration
+section_evaluator:
+  system_prompt: |
+    You are a rigorous RFP section evaluator.
+    Check: on-topic, grounded in provided evidence, tone/style fit, no contradictions with previous sections,
+    no duplication (e.g., boilerplate repeated in non-boilerplate sections), appropriate placeholder usage,
+    writing quality, comprehensive coverage, phrase bank usage, varied sentence structures, and overall professional presentation.
+    CRITICAL: Check if the content uses actual values from evidence instead of placeholders.
+    If evidence contains specific facts (like "project duration: 6 months") but content uses placeholders (like [PROJECT_DURATION]),
+    mark as needs revision and ask to extract actual values from evidence.
+    Check for repetitive opening patterns - sections should start differently and naturally.
+    Verify that actual values from evidence are used when available.
+    Ensure no duplicate headers or section titles in content.
+    Check for varied sentence structures, vocabulary, and natural flow.
+    IMPORTANT: If placeholders are allowed and the content uses appropriate placeholders for missing data,
+    accept the content rather than asking for more evidence. Only ask for more evidence if the content
+    lacks basic structure or is completely off-topic. Placeholders are acceptable when actual data is not available.
+    Return ONLY JSON.
+
+  model: "gpt-4o-mini"
+  temperature: 0.0
+
+# Evidence Approver Agent Configuration
+evidence_approver:
+  system_prompt: |
+    You are a validator for an RFP section.
+    You know that new project details may not exist yet in past materials.
+    If the goal is a template (allow_placeholders=true), judge sufficiency based on whether the snippets
+    provide adequate structure, typical phrasing, and the kinds of requirements usually included.
+    If sufficient for a template, propose placeholder tokens and brief editor guidance.
+    If the goal requires facts (allow_placeholders=false), require actual supported data.
+    CRITICAL: Look for project requirements, technical specifications, specific deliverables, and concrete data.
+    If evidence contains "project duration: 6 months" or "timeline: 6 months", mark as sufficient and do NOT create [PROJECT_DURATION] placeholder.
+    If evidence contains specific budget figures, technical requirements, or other metrics, use those actual values.
+    Return ONLY JSON.
+
+  user_prompt_template: |
+    TOPIC: {topic}
+    SECTION: {name}
+    NOTES: {notes}
+    ALLOW_PLACEHOLDERS: {allow_placeholders}
+
+    SNIPPETS (from recent RFPs/docs):
+    {evidence_json}
+
+    TASK: Analyze the section type, topic, and evidence to create dynamic, relevant placeholders.
+
+    Return ONLY JSON with this shape:
+
+    {{
+      "sufficient": true/false,
+      "reason": "brief reason",
+      "uses_placeholders": true/false,
+      "placeholders": [
+        {{"name":"[Dynamic placeholder name based on section content]","token":"[RELEVANT_TOKEN]","hint":"[appropriate unit/format]"}},
+        {{"name":"[Another dynamic placeholder]","token":"[ANOTHER_TOKEN]","hint":"[appropriate unit/format]"}}
+      ],
+      "editor_guidance": "1-2 sentences describing how to use the structure with placeholders.",
+      "suggested_keywords": ["optional", "extra", "terms", "for retrieval if insufficient"]
+    }}
+
+    PLACEHOLDER GUIDELINES:
+    - Create placeholders specific to the section type and topic
+    - For project sections: use relevant project metrics (duration, budget, deliverables, etc.)
+    - For technical sections: use technical specifications (requirements, standards, protocols, etc.)
+    - For business sections: use business metrics (cost, timeline, resources, etc.)
+    - Make token names descriptive and relevant to the content
+    - Use appropriate units (months, $, %, units, etc.)
+    - Avoid generic placeholders - make them context-specific
+
+  model: "gpt-4o-mini"
+  temperature: 0.0
+
+# Structure Generator Configuration
+structure_generator:
+  # Historical Structure Analyzer
+  historical_analyzer:
+    system_prompt: |
+      You are an expert analyst specializing in RFP structure and content patterns.
+      Your task is to analyze historical RFPs and extract structural patterns, tone, and phrase usage.
+      Focus on identifying:
+      1. Common section structures and their purposes
+      2. Writing tone and style patterns
+      3. Frequently used phrases and terminology
+      4. Content organization patterns
+      5. Key requirements and specifications typically included
+      Return ONLY JSON with your analysis.
+
+    model: "gpt-4o-mini"
+    temperature: 0.0
+
+  # Section Discovery Agent
+  section_discovery:
+    system_prompt: |
+      You are an expert in RFP structure and content organization.
+      Analyze the provided content to identify potential sections for an RFP about the given topic.
+      Consider:
+      1. What sections would be most relevant for this topic
+      2. What information should be included in each section
+      3. How sections should be ordered for maximum clarity
+      4. What tone and style would be appropriate
+      Return ONLY JSON with your section recommendations.
+
+    model: "gpt-4o-mini"
+    temperature: 0.3
+
+  # Structure Proposer Agent
+  structure_proposer:
+    system_prompt: |
+      You are an expert in RFP structure and content strategy.
+      Based on the analysis of historical patterns and the current topic, propose an optimal structure.
+      Consider:
+      1. Section names and their purposes
+      2. Content notes for each section
+      3. Overall tone and style
+      4. Phrase bank from historical analysis
+      5. Boilerplate content
+      Return ONLY JSON with your structure proposal.
+
+    model: "gpt-4o-mini"
+    temperature: 0.3
+
+  # Dynamic Template Generator
+  template_generator:
+    system_prompt: |
+      You are an expert in creating dynamic RFP templates.
+      Generate a flexible template structure that can adapt to different topics while maintaining consistency.
+      Focus on:
+      1. Adaptable section structures
+      2. Flexible content guidelines
+      3. Dynamic placeholder systems
+      4. Consistent tone and style
+      Return ONLY JSON with your template structure.
+
+    model: "gpt-4o-mini"
+    temperature: 0.4
+
+# Type Classifier Agent Configuration
+type_classifier:
+  system_prompt: |
+    You are an expert in classifying RFP types and content.
+    Analyze the provided content and classify it into appropriate categories.
+    Consider:
+    1. Content type (technical, business, operational, etc.)
+    2. Key themes and topics
+    3. Target audience
+    4. Content structure
+    Return ONLY JSON with your classification.
+
+  model: "gpt-4o-mini"
+  temperature: 0.0
+
+# Content Finder Agent Configuration
+content_finder:
+  # Query building instructions
+  query_building:
+    instructions: |
+      Build comprehensive search queries that will find relevant evidence for the section.
+      Consider:
+      1. Section-specific keywords
+      2. Technical and business terms
+      3. Project-specific terminology
+      4. Industry-specific language
+      5. Time-sensitive information
+
+  # Section-specific search terms
+  section_terms:
+    project_overview:
+      - "project overview"
+      - "scope of work"
+      - "objectives"
+      - "goals"
+      - "purpose"
+      - "background"
+      - "introduction"
+    technical_requirements:
+      - "technical requirements"
+      - "specifications"
+      - "standards"
+      - "protocols"
+      - "compliance"
+      - "security"
+      - "performance"
+    deliverables:
+      - "deliverables"
+      - "milestones"
+      - "timeline"
+      - "schedule"
+      - "deadlines"
+      - "phases"
+      - "stages"
+    budget_cost:
+      - "budget"
+      - "cost"
+      - "pricing"
+      - "financial"
+      - "payment"
+      - "terms"
+      - "funding"
+    evaluation_criteria:
+      - "evaluation criteria"
+      - "scoring"
+      - "assessment"
+      - "requirements"
+      - "qualifications"
+      - "experience"
+    submission_requirements:
+      - "submission requirements"
+      - "format"
+      - "deadline"
+      - "contact"
+      - "proposal"
+      - "response"
+
+  # Evidence processing
+  evidence_processing:
+    max_snippet_length: 500
+    max_evidence_items: 10
+    deduplication_threshold: 0.8
+
+# General Configuration
+general:
+  # Recursion limits
+  recursion_limits:
+    style_graph: 10
+    creator_graph: 5
+    finder_graph: 5
+
+  # Evidence search parameters
+  evidence_search:
+    lookback_days: 1080  # Increased to 3 years to find more historical data
+    top_k: 10  # Increased to get more evidence
+    max_loops: 3
+
+  # Content processing
+  content_processing:
+    max_revisions: 2
+    min_confidence: 0.6
+    require_evidence: true
+
+# Error handling and fallbacks
+error_handling:
+  fallback_placeholders:
+    enabled: true
+    default_placeholder: "[DATA_PENDING]"
+    max_retry_attempts: 2
+
+  content_cleaning:
+    remove_duplicate_headers: true
+    normalize_whitespace: true
+    remove_empty_lines: true
+
+

@@ -1,0 +1,80 @@
+Category,Metric,Q1_2024,Q1_2025,Change_YoY,Unit,Notes
+Financial Highlights,Revenue,257.6,328.8,27.6%,SAR millions,Excluding accounting construction revenue
+Financial Highlights,Gross Profit Adjusted,132.9,182.1,37.1%,SAR millions,Excluding accounting construction revenue
+Financial Highlights,EBITDA Adjusted,155.5,212.0,36.4%,SAR millions,Excluding accounting construction revenue
+Financial Highlights,Net Income Adjusted,12.8,24.7,92.8%,SAR millions,Excluding accounting construction revenue
+Financial Highlights,Gross Margin,51.6%,55.4%,3.8%,Percentage,Adjusted gross margin
+Financial Highlights,EBITDA Margin,60.3%,64.5%,4.2%,Percentage,Adjusted EBITDA margin
+Financial Highlights,Net Income Margin,5.0%,7.5%,2.5%,Percentage,Adjusted net income margin
+Operating Expenses,Operating Expenses,53.3,52.3,-1.9%,SAR millions,Decreased YoY
+Operating Expenses,Finance Charges,72.1,72.8,1.0%,SAR millions,Increased slightly
+Operating Expenses,Finance Income,4.5,2.9,-35.6%,SAR millions,Decreased YoY
+Operating Expenses,Other Income,6.1,4.5,-9.8%,SAR millions,Decreased YoY
+Operating Expenses,Zakat,6.6,11.3,71.2%,SAR millions,Increased YoY
+Investment Income,Income from Equity Accounted Associates,8.6,8.5,-1.6%,SAR millions,Investment income
+Ports Segment,Revenue,208.4,271.3,30.2%,SAR millions,Strong performance driven by gateway volume
+Ports Segment,Gross Profit,109.2,157.3,44.0%,SAR millions,Significant increase
+Ports Segment,Gross Margin,52.4%,58.0%,5.6%,Percentage,Improved margins
+Ports Segment,Net Income,12.2,59.2,383.5%,SAR millions,Reported net income
+Ports Segment,Net Income Margin,5.9%,21.8%,15.9%,Percentage,Significant margin improvement
+Ports Volume,Gateway Volume,327,417,27.5%,TEUs thousands,Strong volume growth
+Ports Volume,Transhipment Volume,348,347,-0.3%,TEUs thousands,Stable transhipment
+Ports Volume,Total Volume,675,764,13.2%,TEUs thousands,Overall volume growth
+Logistics Segment,Revenue,26.2,32.2,22.9%,SAR millions,Revenue growth
+Logistics Segment,Gross Profit,12.5,15.1,20.8%,SAR millions,Gross profit increase
+Logistics Segment,Gross Margin,47.7%,46.8%,-0.9%,Percentage,Slight margin decrease
+Logistics Segment,Net Income,5.0,8.6,72.5%,SAR millions,Reported net income
+Logistics Segment,Net Income Margin,19.1%,26.6%,7.5%,Percentage,Margin improvement
+Logistics Occupancy,Land Occupancy,68%,80%,12%,Percentage,Improved occupancy
+Logistics Occupancy,Warehouse Occupancy,56%,90%,34%,Percentage,Significant improvement
+Water Segment,Revenue,23.1,22.9,-0.8%,SAR millions,Slight revenue decline
+Water Segment,Gross Profit,11.2,12.1,8.0%,SAR millions,Gross profit increase
+Water Segment,Gross Margin,48.4%,52.7%,4.3%,Percentage,Improved margins
+Water Segment,Net Income,5.6,7.1,26.8%,SAR millions,Net income increase
+Water Segment,Net Income Margin,24.2%,31.1%,6.9%,Percentage,Margin improvement
+Water Volume,Tawzea Volume,2.7,2.7,0.0%,MN M3,Stable volume
+Water Volume,Others Volume,1.1,1.4,27.3%,MN M3,Volume growth
+Tawzea Segment,Revenue,127.2,132.1,3.8%,SAR millions,Revenue increase
+Tawzea Segment,Gross Profit,13.8,17.7,28.3%,SAR millions,Strong gross profit growth
+Tawzea Segment,Gross Margin,10.8%,13.4%,2.6%,Percentage,Margin improvement
+Tawzea Segment,Net Income,3.2,6.8,111.5%,SAR millions,Reported net income
+Tawzea Segment,Net Income Margin,2.5%,5.1%,2.6%,Percentage,Margin improvement
+Tawzea Segment,SISCO Share Net Income,4.4,3.4,-22.9%,SAR millions,SISCO's share
+SA Talke Segment,Revenue,74.4,93.6,25.9%,SAR millions,Significant revenue growth
+SA Talke Segment,Gross Profit,19.7,26.5,34.5%,SAR millions,Strong gross profit growth
+SA Talke Segment,Gross Margin,26.5%,28.3%,1.8%,Percentage,Margin improvement
+SA Talke Segment,Net Income,14.5,18.9,30.1%,SAR millions,Net income growth
+SA Talke Segment,Net Income Margin,19.5%,20.2%,0.7%,Percentage,Margin improvement
+SA Talke Segment,SISCO Share Net Income,4.6,6.9,51.3%,SAR millions,SISCO's share
+Balance Sheet,Fixed Assets,4382.8,4381.2,-0.04%,SAR millions,Stable fixed assets
+Balance Sheet,Investments,262.4,253.5,-3.4%,SAR millions,Slight decrease
+Balance Sheet,Other Long Term Assets,5.7,5.7,0.0%,SAR millions,No change
+Balance Sheet,Current Assets,1372.7,1406.8,2.5%,SAR millions,Increase in current assets
+Balance Sheet,Total Assets,6030.6,6047.2,0.3%,SAR millions,Total assets
+Balance Sheet,Borrowings,1255.8,1193.5,-5.0%,SAR millions,Decreased borrowings
+Balance Sheet,Long Term Liabilities,1711.7,2748.3,60.5%,SAR millions,Significant increase
+Balance Sheet,Current Liabilities,655.3,673.1,2.7%,SAR millions,Slight increase
+Balance Sheet,Total Liabilities,3623.1,3586.8,-1.0%,SAR millions,Decreased total liabilities
+Balance Sheet,Equity,2407.5,2460.4,2.2%,SAR millions,Equity increase
+Cash Flow,Cash at Beginning,1166.4,885.0,-24.1%,SAR millions,Starting cash position
+Cash Flow,Operating Cash Flow Before WC,681.1,201.9,-70.4%,SAR millions,Decreased operating cash flow
+Cash Flow,Net Working Capital Movement,-334.9,-96.8,71.1%,SAR millions,Improved working capital
+Cash Flow,Cash from Operating Activities,346.2,105.1,-69.6%,SAR millions,Decreased operating cash flow
+Cash Flow,Finance Charges Zakat Tax,-160.5,-40.9,74.5%,SAR millions,Decreased finance charges
+Cash Flow,Net Operating Cash Flow,185.7,64.2,-65.4%,SAR millions,Decreased net operating cash flow
+Cash Flow,Short Term Murabaha,-118.6,2.0,101.7%,SAR millions,Net inflow vs outflow
+Cash Flow,Other Investing Activities,-99.7,-44.7,55.2%,SAR millions,Decreased investing outflows
+Cash Flow,Net Financing Activities,-240.7,-52.9,78.0%,SAR millions,Decreased financing outflows
+Cash Flow,Cash at End,885.0,853.6,-3.5%,SAR millions,Ending cash position
+Capital Allocation,Dividends,85.0,85.0,0.0%,SAR millions,Committed allocation
+Capital Allocation,Share Buyback,6.2,6.2,0.0%,SAR millions,Committed allocation
+Capital Allocation,RSPDI,116.0,116.0,0.0%,SAR millions,Committed allocation
+Capital Allocation,GDI Acquisitions,100.0,100.0,0.0%,SAR millions,Committed allocation
+Capital Allocation,Potential New Acquisitions,187.0,187.0,0.0%,SAR millions,Committed allocation
+Capital Allocation,Additional Zakat Liability,17.5,17.5,0.0%,SAR millions,Committed allocation
+Capital Allocation,Total Committed,511.7,511.7,0.0%,SAR millions,Total committed capital
+Capital Allocation,Not Yet Committed,5.3,5.3,0.0%,SAR millions,Uncommitted capital
+Capital Allocation,Total Capital,517.0,517.0,0.0%,SAR millions,Total capital available
+Capital Allocation,Percent Committed,99%,99%,0.0%,Percentage,Commitment rate
+
+

@@ -1,0 +1,18 @@
+Metric,Period,Q2_2024,Q1_2025,Q2_2025,Q2_24_to_Q2_25_Change,Q1_25_to_Q2_25_Change,Unit,Description
+Revenue,Quarterly,302.4,328.8,307.3,1.62%,-6.54%,SAR millions,Quarterly revenue progression
+Gross_Profit,Quarterly,156.8,182.1,160.0,2.04%,-12.14%,SAR millions,Quarterly gross profit progression
+Operating_Profit,Quarterly,97.3,129.8,102.5,5.34%,-21.03%,SAR millions,Quarterly operating profit progression
+Net_Profit,Quarterly,10.5,24.7,19.9,89.52%,-19.43%,SAR millions,Quarterly net profit progression
+Comprehensive_Income,Quarterly,11.9,16.7,17.8,49.58%,6.59%,SAR millions,Quarterly comprehensive income progression
+Gross_Margin,Quarterly,51.8%,55.4%,52.1%,0.3%,-3.3%,Percentage,Gross profit margin
+Operating_Margin,Quarterly,32.2%,39.5%,33.4%,1.2%,-6.1%,Percentage,Operating profit margin
+Net_Margin,Quarterly,3.5%,7.5%,6.5%,3.0%,-1.0%,Percentage,Net profit margin
+H1_Revenue,Year_to_Date,560.1,,636.1,13.57%,,SAR millions,First half revenue comparison
+H1_Gross_Profit,Year_to_Date,289.7,,342.2,18.12%,,SAR millions,First half gross profit comparison
+H1_Operating_Profit,Year_to_Date,176.9,,232.3,31.32%,,SAR millions,First half operating profit comparison
+H1_Net_Profit,Year_to_Date,-10.6,,44.7,521.70%,,SAR millions,First half net profit comparison
+H1_Comprehensive_Income,Year_to_Date,-1.9,,34.5,1915.79%,,SAR millions,First half comprehensive income comparison
+H1_Shareholders_Equity,Year_to_Date,1474.0,,1447.0,-1.83%,,SAR millions,Shareholders equity comparison
+H1_EPS,Year_to_Date,-0.13,,0.55,523.08%,,SAR per share,Earnings per share comparison
+
+
